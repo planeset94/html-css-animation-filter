@@ -2,11 +2,14 @@
     width: 100px;
     height: 100px;
     border: 1px solid red;
+    transition:background-color 4s;
 }
 .ex-2-square {
     width: 100px;
     height: 100px;
     background: red;
+    appearance: none;
+    transition: all 4s;
 }
 .ex-3-square {
     width: 100px;
@@ -66,4 +69,17 @@
     background: #f5f5f5;
     width: 60px;
     height: 20px;
+}
+/* ---------MY SOLUTIONS------------- */
+
+/* EX 1 */
+.ex-1-square:hover{
+background-color: red;
+}
+
+/* EX 2 */
+.ex-2-square:checked {
+    width: 800px;
+    height: 500px;
+    background: red;
 }
