@@ -46,6 +46,7 @@
 }
 .ex-10-icon {
     font-size: 60px;
+    animation:mymove10 2s linear infinite;
 }
 .ex-11-icon {
     font-size: 60px;
@@ -62,6 +63,7 @@
     line-height: 70px;
     text-align: center;
     text-decoration: none;
+    
 }
 .ex-12-top-white, .ex-13-top-white {
     position: absolute;
@@ -70,6 +72,8 @@
     background: #f5f5f5;
     width: 60px;
     height: 20px;
+    transition: all 0.5s linear;
+    
 }
 .ex-12-bottom-white, .ex-13-bottom-white {
     position: absolute;
@@ -78,6 +82,8 @@
     background: #f5f5f5;
     width: 60px;
     height: 20px;
+    transition: all 0.5s linear;
+   
 }
 /* ---------MY SOLUTIONS------------- */
 
@@ -124,3 +130,178 @@ filter: sepia(60%) contrast(50%);
     border-radius: 40px;
 }
 /* EX 9 */
+.ex-9-img:hover{
+    filter: opacity(30%) saturate(80%);
+    border-radius: 40px;
+    transform: scale(1.2,1.5);
+}
+
+/* EX 10 */
+@keyframes mymove10{
+from{
+    transform: rotate(360deg);
+}
+to{
+    transform: rotate(0deg);
+}
+}
+
+/* EX 11 */
+.ex-11-icon:hover{
+    animation:mymove11 2s cubic-bezier(0.1, 0.1, 0.1,1);
+
+}
+@keyframes mymove11{
+
+    0%{transform: rotate(0deg);
+
+    }
+    50%{
+        transform: rotate(270deg);
+    }  
+
+    100%{
+        transform: rotate(0deg);
+    }
+
+
+
+    }
+
+
+    /* EX 12 */
+    .ex-12-button:hover .ex-12-top-white{
+        position: absolute;
+        top: -10px;
+        left: 40%;
+        background: #f5f5f5;
+        width: 60px;
+        height: 20px;
+    }
+    .ex-12-button:hover .ex-12-bottom-white{
+        position: absolute;
+        bottom: -10px;
+        right: 10%;
+        background: #f5f5f5;
+        width: 60px;
+        height: 20px;
+    }
+
+
+    /* EX 13 */
+    .ex-13-top-white{
+        animation:mymove13 3s linear infinite;
+    }
+
+    .ex-13-bottom-white{
+        animation:mymove14 3s linear infinite;
+    }
+@keyframes mymove13{
+
+    0%{
+        position: absolute;
+        top: -10px;
+        left: 20%;
+        background:#f5f5f5;
+        width: 60px;
+        height: 20px;
+    }
+    25%{
+        position: absolute;
+        top: -10px;
+        left: 85%;
+        background:#f5f5f5;
+        width: 60px;
+        height: 20px;
+    }
+    50%{
+        position: absolute;
+        top: 50px;
+        left: 85%;
+        background:#f5f5f5;
+        width: 60px;
+        height: 20px;
+    }
+    75%{
+        position: absolute;
+        top: 50px;
+        left: -10%;
+        background:#f5f5f5;
+        width: 60px;
+        height: 20px;
+    }
+    90%{
+        position: absolute;
+        top: -10px;
+        left: -10%;
+        background:#f5f5f5;
+        width: 60px;
+        height: 20px;
+    }
+    
+    
+    100%{
+        position: absolute;
+        top: -10px;
+        left: 20%;
+        background:#f5f5f5;
+        width: 60px;
+        height: 20px;
+    }
+    }
+
+
+
+@keyframes mymove14{
+
+0%{
+    position: absolute;
+    bottom: -10px;
+    right: 20%;
+    background:#f5f5f5;
+    width: 60px;
+    height: 20px;
+}
+25%{
+    position: absolute;
+    bottom: -10px;
+    right: 85%;
+    background:#f5f5f5;
+    width: 60px;
+    height: 20px;
+}
+50%{
+    position: absolute;
+    bottom: 50px;
+    right: 85%;
+    background:#f5f5f5;
+    width: 60px;
+    height: 20px;
+}
+75%{
+    position: absolute;
+    bottom: 50px;
+    right: -10%;
+    background:#f5f5f5;
+    width: 60px;
+    height: 20px;
+}
+90%{
+    position: absolute;
+    bottom: -10px;
+    right: -10%;
+    background:#f5f5f5;
+    width: 60px;
+    height: 20px;
+}
+
+
+100%{
+    position: absolute;
+    bottom: -10px;
+    right: 20%;
+    background:#f5f5f5;
+    width: 60px;
+    height: 20px;
+}
+}
